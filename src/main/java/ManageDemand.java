@@ -1,9 +1,9 @@
+import java.util.Collections;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class ManageDemand {
-    public static long filledOrders(List<Long> orders, long k){
-        //TODO add your code here
+    public long filledOrders(List<Long> orders, long k){
+        Collections.sort(orders);
         int totalWidgets = 0;
         int n = orders.size();
         int totalOrders = 0;
